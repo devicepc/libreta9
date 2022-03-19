@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <script src="./js/slider.js"></script> -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1SKF420ME"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J1SKF420ME');
+</script>
+    
+    
+    
+   
+    <title>Driver's book for points :: Uruguay</title>
+</head>
+<body>
+    <header>
+       
+    <nav class="nav">
+        <ul>
+             <li class="linav"><a href="indexeng.html">Index </a></li>
+             <li><a href="./faqeng.html">FAQ</a></li>
+             
+            
+           </ul>
+           <div class="flags">
+               <a href="indexAdmin.html"><img src="./img/spain-flag.png" alt="Español" class="lang"></a>
+           
+       </div>
+           <div class="hide">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+               <img src="./img/menu.png" alt=""> 
+             </div>
+    </nav>
+</header>
+
+    <h1 class="titulo">Driver's book for points</h1>
+
+
+   <section class="busqueda">
+      
+            <div class="card-body" id="cardBody">
+              <h1 class="h4">City hall</h1>
+             <h1 class="h4">Place new driver's license
+            </h1>
+  
+                <form id="task-form">
+                    <label for="description">Driver's license:</label>
+                     <input
+                    id="Lib-Id"
+                    class="form-control mb-3"
+                    placeholder=" Identificador" required
+                  ></input>
+                  <br/><br/>
+                  <label for="title">Category:</label>
+                  <select name="Lib-Cat" id="Lib-Cat" required >
+                    <option value=""disabled selected>SELECT Category</option>
+                    <option value="A">Category A</option>
+                    <option value="B">Category B</option>
+                    <option value="C">Category C</option>
+                    <option value="D">Category D</option>
+                    <option value="E">Category E</option>
+                    <option value="F">Category F</option>
+                    <option value="G1">Category G1</option>
+                    <option value="G2">Category G2</option>
+                    <option value="G3">Category G3</option>
+                    <option value="H">Category H</option>
+                    
+                  </select>
+                  
+                 <br/><br/>
+                  
+                  <label for="title">Name:</label>
+                  <input
+                    type="text"
+                    id="Lib-Name"
+                    class="form-control mb-3"
+                    class="My First Title"
+                    placeholder="Name"
+                   
+                  /><br/><br/>
+  
+                  <label for="description">Identification card:</label>
+                  <input
+                    id="Lib-Ced"
+                    class="form-control mb-3"
+                    placeholder=" Identification card"
+                  ></input>
+                  <br/><br/>
+                  <label for="title">Expiration:</label>
+                  <input
+                    type="date"
+                    id="Lib-Vto"
+                    class="form-control mb-3"
+                    class="My First Title"
+                    placeholder="Expiration"
+                    
+                  /><br/><br/>
+  
+                  <label for="description">Observations:</label>
+                  <input
+                    id="Lib-Obser"
+                    class="form-control mb-3"
+                    placeholder=" Observations"
+                  ></input>
+                  <br/><br/>
+                  <label for="description">Points:</label>
+                  <input
+                    id="Lib-Ptos"
+                    class="form-control mb-3"
+                    placeholder=" Points"
+                    value="100"
+                  ></input><br/><br/>
+                  <div>
+                    <select name="Lib-State" id="Lib-State" required>
+                      <option value=""disabled selected>SELECT THE STATE OF THE DRIVER'S LICENSE
+                      </option>
+                    <option value="Habilitada">Enabled</option>
+                    <option value="Deshabilitada">Disabled</option>
+                    </select>
+                  
+              </div>
+              
+            <br/><br/>
+   
+ 
+                  <button class="btn btn-primary BtnBuscar" id="btn-task-form">Save</button>
+                </form>
+                <br><br>
+              </div>
+          
+        </section>
+    <section class="Inspector">
+        <h1 class="titulo">Welcome Inspector XXXXX</h1>
+        <div class="BusquedaInsp">
+            <h2 class="TituloBuscarInsp">Driver's license search by number
+            </h2>
+            <form action="" id="task-inspector-form">
+            <label for="" class="LabelBuscInsp">Identification card</label>
+            <input type="text"placeholder="Identificador"  id="IdBUsInsp"><br/>
+            <!-- <button class="BtnBuscar" id="btn srch-form" onclick="tasksearchForm()">Buscar</button><br/><br/> -->
+            <button class="btn btn-primary BtnBuscar" id="Consultar" class='btn-Edit' data-id="${doc.id}">Search driver</button>
+            <br><br><br>
+          </form>
+        </div >
+        
+        <div class="DataLib" id="task-container-up2"> </div>
+         <!--- prueba de instalacion de multas-->
+
+         <div id="SelectMultas">
+          <h2>Select the traffic fine to apply
+          </h2>
+          <select name="" id="Multas" >
+            <option value=""disabled selected>SELECIONE Category</option>
+            <option value="2">Disobedience to the provisions</option>
+            <option value="3">Disobedience to traffic signals
+            </option>
+            <option value="4">Vehicle driving on the sidewalk
+            </option>
+            <option value="4">Do not give way to the pedestrian
+            </option>
+            <option value="8">Driving without a license or with a suspended license
+            </option>
+            <option value="2">License not authorized for the vehicle you drive
+            </option>
+            <option value="1">would-be unauthorized driver
+            </option>
+            <option value="15">Positive Alcoholemia
+
+            </option>
+            <option value="15">Presence of psychotropic drugs</option>
+                   
+          </select>
+        </div> 
+
+        <div id="SelectMultas2">
+          <br><br>
+          <br><br>
+        </div>
+        <div id="QuitaDePuntos"></div>
+    </section>
+
+ 
+    <section class="Instructor">
+        <h1 class="titulo">Welcome Instructor XXXXX</h1>
+        <div class="BusquedaInsp">
+          <form action="" id="task-inst-form">
+            <h2 class="TituloBuscarInsp">Driver's license search by number</h2>
+            <label for="" class="LabelBuscInsp">Identification card</label><input type="text"placeholder="Identificador"  id="IdBUsInst"><br/>
+            <button class="BtnBuscar" >Search</button><br/><br/>
+          </form>
+        </div>
+        <div class="DataLib" id="task-container-upIstr"></div>
+             <!--- prueba de instalacion de Cursos aprobados-->
+
+             <div id="SelectCursos">
+              <h2>Select the course to apply
+              </h2>
+              <select name="" id="Cursos" >
+                <option value=""disabled selected>SELECIONE Category</option>
+                <option value="2">Course obedience to the provisions</option>
+                <option value="3"> Obedience course to road signs
+                </option>
+                <option value="4">Seating course for children
+                </option>
+                <option value="4"> knowledge check test
+                </option>
+                
+                <option value="2">awareness and reeducation course
+                </option>
+                <option value="1"> safe driving courses
+                </option>
+                <option value="15">road safety techniques
+                </option>
+                          
+              </select>
+            </div> 
+    
+            <div id="SelectCursos2">
+              <br><br>
+              <br><br>
+            </div>
+            <div id="SumaDePuntos"></div>
+    </section>
+    
+    <!-- lugar donde dejar los datos -->
+    <div class="DataLib" id="task-container">
+      <h2 class="DataIns">Last licenses Driver's license entered</h2>
+        <img src="./img/libreta4.jpg" alt="" id="IMGdata">
+        
+        
+    </div>
+    <div class="slider">
+      <ul>
+          <li>
+  <img src="./img/libreta-conducir-cerro-largo.jpg" alt="">    
+  </li>
+          <li>
+  <img src="./img/Conducciónsegura-05-1024x665.png" alt="">
+  </li>
+  
+  <li >
+      <img src="./img/categorias_permisos_uruguay.png">
+      </li>
+              <li class="lislider">
+      <img src="./img/libreta4.jpg" alt="">
+      
+      
+      </li>
+      </ul>
+  </div>
+  <br><br>
+  <!-- fin de slider-->
+    <footer class="footer" >
+      <div class="Footerdiv">
+          <h4>   Contact us</h4>
+          <a href="tel:+5982111111"><p class="hreffooter">Tel: 11111111</p></a>
+          <a href=""><p class="hreffooter"> Send us your comment</p></a>
+          <p>Opening hours from 09:00 to 17:00</p>
+          <h4>Newsletter Subscription</h4>
+          <input type="text" placeholder="Enter an email" id="rss"><button class="rssButton" onclick="rss();">Send</button>
+      </div>
+      <div class="Footerdiv">
+          <h4>Management</h4>
+          <a href=""><p class="hreffooter">Risk factors</p></a>
+          <a href=""><p class="hreffooter">Policies of use</p> </a>
+          <a href=""><p class="hreffooter">Single driving license </p></a>
+          <a href=""><p class="hreffooter">Agreements</p> </a>
+    
+          <a href=""><p class="hreffooter">Courses</p></a>
+          <a href=""><p class="hreffooter">Procedures</p> </a>
+      </div>
+    
+    </footer>
+    
+    <script type="module" src="./js/firebase.js"></script>
+    <script src="./js/buscar.js"></script> 
+    <!-- <script type="module" src="./js/index.js"></script> -->
+    <script type="module" src="./js/index4.js"></script>
+    <script>
+      function rss(){
+          document.getElementById('rss').value='';
+      }
+  </script>
+                  
+</body>
+</html>
